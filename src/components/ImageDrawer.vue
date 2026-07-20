@@ -1,0 +1,7 @@
+<script setup lang="ts">
+import type { ManifestPage } from '../types/content'
+import type { OpenImagePayload } from './LegacyContent.vue'
+defineProps<{image:OpenImagePayload|null;sourcePage:ManifestPage|null;relatedPages:ManifestPage[]}>()
+const emit=defineEmits<{close:[];fullscreen:[image:OpenImagePayload];navigate:[pageId:string]}>()
+</script>
+<template><Transition name="drawer"><aside v-if="image" class="annotation-drawer image-drawer" aria-label="Image details"><header class="drawer-header"><div><p class="eyebrow">Image</p><h2>{{ image.title }}</h2></div><button class="icon-button" type="button" aria-label="Close image" @click="emit('close')">×</button></header><div class="drawer-body"><button class="drawer-image-stage" type="button" aria-label="Open full-screen image" @click="emit('fullscreen',image)"><img :src="image.src" :alt="image.alt"><span>View full screen</span></button><div class="image-metadata"><p v-if="image.alt&&image.alt!==image.title">{{ image.alt }}</p><dl v-if="sourcePage"><div><dt>Appears in</dt><dd>{{ sourcePage.title }}</dd></div><div><dt>Source file</dt><dd><code>{{ sourcePage.sourceFile }}</code></dd></div></dl><section v-if="relatedPages.length" class="backlinks"><h3>Related pages</h3><button v-for="page in relatedPages" :key="page.id" type="button" @click="emit('navigate',page.id)">{{ page.title }}</button></section></div></div></aside></Transition></template>
