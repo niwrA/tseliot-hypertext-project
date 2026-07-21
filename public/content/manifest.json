@@ -690,8 +690,8 @@
     {
       "id": "burbank-notes-title-a",
       "slug": "title",
-      "type": "annotated-text",
-      "title": "Title",
+      "type": "annotation",
+      "title": "Title of “Burbank with a Baedeker: Bleistein with a Cigar”",
       "sourceFile": "Burbank_notes/title_A.htm"
     },
     {
@@ -2094,5 +2094,16 @@
       "title": "Index Server Search Form",
       "sourceFile": "search.htm"
     }
-  ]
+  ],
+  "counts": {
+    "reading-page": 24,
+    "annotated-text": 3,
+    "main-text": 1,
+    "annotation": 152,
+    "bibliography-image": 1,
+    "source-page": 95,
+    "image-wrapper": 19,
+    "bibliography": 1,
+    "frameset": 1
+  }
 }

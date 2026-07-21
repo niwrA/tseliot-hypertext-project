@@ -1,314 +1,28 @@
 {
   "summary": {
     "pages": 297,
-    "proposedOrAppliedTitleChanges": 43,
-    "remainingWeakTitles": 8,
+    "proposedOrAppliedTitleChanges": 0,
+    "proposedOrAppliedTypeChanges": 0,
+    "remainingWeakTitles": 7,
     "missingImageReferences": 21,
     "emptyInternalLinkLabels": 520,
     "brokenLinksReportedByImporter": 13,
     "duplicateTitles": 16
   },
-  "titleChanges": [
+  "titleChanges": [],
+  "typeChanges": [],
+  "annotatedWorks": [
     {
-      "id": "among-notes-title-n",
-      "from": "Title",
-      "to": "Sweeney Among ...",
-      "source": "strong",
-      "score": 107
+      "id": "among-notes-among-a",
+      "title": "Sweeney Among the Nightingales"
     },
     {
-      "id": "burbank-notes-antony-n",
-      "from": "Antony_N",
-      "to": "The God Hercules...",
-      "source": "strong",
-      "score": 107
+      "id": "burbank-notes-burbank-a",
+      "title": "Burbank with a Baedeker: Bleistein with a Cigar"
     },
     {
-      "id": "burbank-notes-axletree-n",
-      "from": "axletree_N",
-      "to": "axletree",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-beatup-n",
-      "from": "beatup_N",
-      "to": "beat up the...",
-      "source": "strong",
-      "score": 107
-    },
-    {
-      "id": "burbank-notes-bentknee-n",
-      "from": "bentknees_N",
-      "to": "a saggy bending...",
-      "source": "strong",
-      "score": 107
-    },
-    {
-      "id": "burbank-notes-bluenailed-n",
-      "from": "bluenailed_N",
-      "to": "blue-nailed",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-bridge-n",
-      "from": "bridge_N",
-      "to": "little bridge...",
-      "source": "strong",
-      "score": 107
-    },
-    {
-      "id": "burbank-notes-clipped-n",
-      "from": "Clipped_N",
-      "to": "clipped",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-descend-n",
-      "from": "descend_N",
-      "to": "descending at...",
-      "source": "strong",
-      "score": 107
-    },
-    {
-      "id": "burbank-notes-entertains-n",
-      "from": "entertains_N",
-      "to": "she entertains",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-evenfeet-n",
-      "from": "evenfeet_N",
-      "to": "with even feet",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-eye-n",
-      "from": "eye_N",
-      "to": "eye",
-      "source": "strong",
-      "score": 70
-    },
-    {
-      "id": "burbank-notes-flead-n",
-      "from": "Flea'd_N",
-      "to": "flea'd",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-horses-n",
-      "from": "horses_N",
-      "to": "the horses",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-img-rialto",
-      "from": "Eliot in 1910",
-      "to": "The Rialto Bridge by Canaletto",
-      "source": "override",
-      "score": 1000
-    },
-    {
-      "id": "burbank-notes-img-rialto1988",
-      "from": "Eliot in 1910",
-      "to": "Rialto bridge, Venice 1988",
-      "source": "image-alt",
-      "score": 135
-    },
-    {
-      "id": "burbank-notes-img-sebastian",
-      "from": "Eliot in 1910",
-      "to": "St Sebastian",
-      "source": "em",
-      "score": 75
-    },
-    {
-      "id": "burbank-notes-img-stmark",
-      "from": "Eliot in 1910",
-      "to": "St Mark and the Winged Lion, 1988.",
-      "source": "image-alt",
-      "score": 135
-    },
-    {
-      "id": "burbank-notes-img-venice1-gc",
-      "from": "Eliot in 1910",
-      "to": "view from",
-      "source": "em",
-      "score": 75
-    },
-    {
-      "id": "burbank-notes-istria-n",
-      "from": "Istria_N",
-      "to": "Istria",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-jew-n",
-      "from": "jew_N",
-      "to": "Jew",
-      "source": "strong",
-      "score": 70
-    },
-    {
-      "id": "burbank-notes-lot-n",
-      "from": "lot_N",
-      "to": "ew...lot",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-loved-n",
-      "from": "loved_N",
-      "to": "loved him...",
-      "source": "strong",
-      "score": 107
-    },
-    {
-      "id": "burbank-notes-lustreless-n",
-      "from": "lustreless_N",
-      "to": "a lustreless...",
-      "source": "strong",
-      "score": 107
-    },
-    {
-      "id": "burbank-notes-palms-n",
-      "from": "palms_N",
-      "to": "and elbows, with...",
-      "source": "strong",
-      "score": 107
-    },
-    {
-      "id": "burbank-notes-passed-n",
-      "from": "passed_N",
-      "to": "passed seaward...",
-      "source": "strong",
-      "score": 107
-    },
-    {
-      "id": "burbank-notes-passing-n",
-      "from": "passing_N",
-      "to": "passing bell",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-perspective-n",
-      "from": "perspective_N",
-      "to": "perspective of Canaletto",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-phoenix-n",
-      "from": "Phoenix_N",
-      "to": "Defunctive music",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-phthisic-n",
-      "from": "phthisic_N",
-      "to": "meagre, phthisic",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-piles-n",
-      "from": "piles_N",
-      "to": "rats...piles",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-princess-n",
-      "from": "Princess_N",
-      "to": "Princess Volupine",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-protozoic-n",
-      "from": "protozoic_N",
-      "to": "protozoic slime",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-protrusive-n",
-      "from": "lustreless_N",
-      "to": "protrusive",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-seven-n",
-      "from": "passing_N",
-      "to": "the seven laws",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-slowly-n",
-      "from": "slowly_N",
-      "to": "Slowly",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-thisorsu-n",
-      "from": "thisorsuch_N",
-      "to": "But this or...",
-      "source": "strong",
-      "score": 107
-    },
-    {
-      "id": "burbank-notes-times-n",
-      "from": "times_N",
-      "to": "Times' ruins",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "burbank-notes-under-n",
-      "from": "under_N",
-      "to": "under sea",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "waste-notes-fabbro-n",
-      "from": "Sybil_N",
-      "to": "Il miglior fabbro",
-      "source": "strong",
-      "score": 110
-    },
-    {
-      "id": "waste-notes-sybil-n",
-      "from": "Sybil_N",
-      "to": "Nam Sibyl...",
-      "source": "strong",
-      "score": 107
-    },
-    {
-      "id": "waste-notes-tempest1-2-487-n",
-      "from": "Tempest1-2-487_N",
-      "to": "Those were pearls ...",
-      "source": "strong",
-      "score": 107
-    },
-    {
-      "id": "waste-notes-unreal-n",
-      "from": "Unreal_N",
-      "to": "Unreal City",
-      "source": "b",
-      "score": 100
+      "id": "waste-notes-waste-a",
+      "title": "The Waste Land - T.S. Eliot"
     }
   ],
   "remainingWeakTitles": [
@@ -318,13 +32,6 @@
       "suggestion": "sources",
       "source": "b",
       "score": 100
-    },
-    {
-      "id": "burbank-notes-title-a",
-      "title": "Title",
-      "suggestion": "sources",
-      "source": "strong",
-      "score": 110
     },
     {
       "id": "waste-notes-enl218",

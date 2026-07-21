@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "content:audit": "python3 tools/content_quality.py",
+    "content:enrich": "python3 tools/content_quality.py --apply"
   },
   "dependencies": {
     "@vueuse/core": "^13.5.0",

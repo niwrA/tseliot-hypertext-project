@@ -4,8 +4,8 @@ const emit = defineEmits();
 const groups = computed(() => {
     const pages = props.manifest?.pages ?? [];
     const selected = {
-        'Annotated works': pages.filter(p => p.type === 'annotated-text'),
-        'Poems and reading pages': pages.filter(p => p.type === 'reading-page' || p.type === 'main-text'),
+        'Works': pages.filter(p => p.type === 'annotated-text'),
+        'Other poems and reading pages': pages.filter(p => p.type === 'reading-page' || p.type === 'main-text'),
         'Essays and sources': pages.filter(p => p.type === 'source-page' && !p.sourceFile.toLowerCase().includes('_notes/')),
         'Project': pages.filter(p => ['eliot-introduction', 'eliot-life', 'eliot-works', 'eliot-books', 'eliot-credits'].includes(p.id)),
     };

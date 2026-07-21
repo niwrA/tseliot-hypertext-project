@@ -144,21 +144,30 @@ def main() -> int:
     page_files = sorted(PAGES.glob("*.json"))
     pages = [load_json(p) for p in page_files]
     changes: list[dict[str, Any]] = []
+    type_changes: list[dict[str, Any]] = []
     weak: list[dict[str, Any]] = []
     missing_images_map: dict[tuple[str, str], dict[str, str]] = {}
     empty_labels: list[dict[str, str]] = []
 
     for path, page in zip(page_files, pages):
+        override = overrides.get(page["id"], {})
+        override_type = override.get("type")
+        if override_type and override_type != page.get("type"):
+            type_changes.append({"id": page["id"], "from": page.get("type"), "to": override_type})
+            if args.apply:
+                page["type"] = override_type
+
         is_weak = weak_title(page)
         proposed, source, score = derive_title(page, overrides)
         current = clean(page.get("title"))
-        eligible_type = page.get("type") in {"annotation", "image-wrapper", "bibliography-image"}
+        eligible_type = page.get("type") in {"annotation", "image-wrapper", "bibliography-image"} or page["id"] in overrides
         should_change = bool(proposed and proposed != current and eligible_type and (is_weak or page["id"] in overrides) and score >= 70)
         if should_change:
             changes.append({"id": page["id"], "from": current, "to": proposed, "source": source, "score": score})
             if args.apply:
                 page["title"] = proposed
-                dump_json(path, page)
+        if args.apply and (should_change or any(c["id"] == page["id"] for c in type_changes)):
+            dump_json(path, page)
         elif is_weak:
             weak.append({"id": page["id"], "title": current, "suggestion": proposed, "source": source, "score": score})
 
@@ -170,17 +179,26 @@ def main() -> int:
             if link.get("kind") == "internal" and not clean(link.get("label")):
                 empty_labels.append({"pageId": page["id"], "target": link.get("pageId") or link.get("path", "")})
 
-    if args.apply and changes:
+    if args.apply and (changes or type_changes):
         title_by_id = {c["id"]: c["to"] for c in changes}
+        type_by_id = {c["id"]: c["to"] for c in type_changes}
         manifest = load_json(CONTENT / "manifest.json")
         for item in manifest.get("pages", []):
             if item["id"] in title_by_id:
                 item["title"] = title_by_id[item["id"]]
+            if item["id"] in type_by_id:
+                item["type"] = type_by_id[item["id"]]
+            if item["id"] in type_by_id:
+                item["type"] = type_by_id[item["id"]]
+        manifest["counts"] = dict(Counter(item.get("type", "unknown") for item in manifest.get("pages", [])))
         dump_json(CONTENT / "manifest.json", manifest)
         search = load_json(CONTENT / "search-index.json")
         for item in search:
             if item["id"] in title_by_id:
                 item["title"] = title_by_id[item["id"]]
+            if item["id"] in type_by_id:
+                item["type"] = type_by_id[item["id"]]
+        manifest["counts"] = dict(Counter(item.get("type", "unknown") for item in manifest.get("pages", [])))
         dump_json(CONTENT / "search-index.json", search, compact=True)
 
     missing_images = list(missing_images_map.values())
@@ -193,6 +211,7 @@ def main() -> int:
         "summary": {
             "pages": len(pages),
             "proposedOrAppliedTitleChanges": len(changes),
+            "proposedOrAppliedTypeChanges": len(type_changes),
             "remainingWeakTitles": len(weak),
             "missingImageReferences": len(missing_images),
             "emptyInternalLinkLabels": len(empty_labels),
@@ -200,6 +219,8 @@ def main() -> int:
             "duplicateTitles": len(duplicate_titles),
         },
         "titleChanges": changes,
+        "typeChanges": type_changes,
+        "annotatedWorks": [{"id": p["id"], "title": clean(p.get("title"))} for p in pages if p.get("type") == "annotated-text"],
         "remainingWeakTitles": weak,
         "missingImageReferences": missing_images,
         "emptyInternalLinkLabels": empty_labels,
@@ -215,6 +236,9 @@ def main() -> int:
     md += ["", "## Title changes", "", "| Page | Previous | Improved | Basis |", "|---|---|---|---|"]
     for c in changes:
         md.append(f"| `{c['id']}` | {c['from']} | {c['to']} | {c['source']} |")
+    md += ["", "## Type changes", "", "| Page | Previous type | Corrected type |", "|---|---|---|"]
+    for c in type_changes:
+        md.append(f"| `{c['id']}` | {c['from']} | {c['to']} |")
     md += ["", "## Remaining editorial work", "", "See `content-quality.json` for complete machine-readable lists of weak titles, missing images, blank link labels, broken links, and duplicate titles.", ""]
     REPORT_MD.write_text("\n".join(md), encoding="utf-8")
     print(json.dumps(s, indent=2))
