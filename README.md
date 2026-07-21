@@ -69,3 +69,7 @@ npm ci
 npm run content:audit
 npm run build
 ```
+
+## About page
+
+The public landing page is `#/about`. It identifies Arwin van Arum as the author of the original 1998 T. S. Eliot Hypertext Project and as editor of the modern edition. The reader header and browse panel both link prominently to it.

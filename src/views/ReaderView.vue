@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed,onMounted,ref,watch } from 'vue'
-import { useRoute,useRouter } from 'vue-router'
+import { RouterLink,useRoute,useRouter } from 'vue-router'
 import AnnotationDrawer from '../components/AnnotationDrawer.vue'
 import AnnotationPreview from '../components/AnnotationPreview.vue'
 import ImageDrawer from '../components/ImageDrawer.vue'
@@ -39,7 +39,7 @@ function openImage(image:OpenImagePayload){activeImage.value=image;imagePreview.
 onMounted(async()=>{manifest.value=await loadManifest();await loadCurrentPage()});watch([pageId,annotationId],loadCurrentPage)
 </script>
 <template><div class="reader-shell">
-<header class="site-header"><button class="menu-button" type="button" @click="navigationOpen=true" aria-label="Browse project">☰</button><div class="brand"><p class="eyebrow">Modern edition · preserved source</p><h1>T. S. Eliot Hypertext Project</h1></div><button type="button" class="search-button" @click="searchOpen=!searchOpen">{{searchOpen?'Close search':'Search'}}</button></header>
+<header class="site-header"><button class="menu-button" type="button" @click="navigationOpen=true" aria-label="Browse project">☰</button><div class="brand"><p class="eyebrow">Modern edition · preserved source</p><h1>T. S. Eliot Hypertext Project</h1></div><div class="header-actions"><RouterLink class="header-link" to="/about">About</RouterLink><button type="button" class="search-button" @click="searchOpen=!searchOpen">{{searchOpen?'Close search':'Search'}}</button></div></header>
 <ProjectSearch v-if="searchOpen" @close="searchOpen=false" />
 <ProjectNavigation v-if="navigationOpen" :manifest="manifest" @close="navigationOpen=false" @navigate="navigate" />
 <main class="reader-main"><section v-if="loading" class="status">Loading…</section><section v-else-if="error" class="status error">{{error}}</section><article v-else-if="page" class="reading-card"><header class="page-header"><p class="eyebrow">{{page.type.replace('-',' ')}}</p><h2>{{page.title}}</h2></header><LegacyContent :page="page" :page-types="pageTypes" @open-annotation="openAnnotation" @preview-annotation="previewAnnotation" @close-annotation-preview="closeAnnotationPreview" @navigate="navigate" @open-image="openImage" @preview-image="previewImage" @close-image-preview="closeImagePreview" @open-image-wrapper="openImageWrapper" @preview-image-wrapper="previewImageWrapper"/><footer class="page-footer"><div><span>Source</span><code>{{page.sourceFile}}</code></div><div><span>Edition</span><strong>{{page.provenance.edition}}</strong></div></footer></article></main>

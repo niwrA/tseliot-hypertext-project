@@ -1,5 +1,5 @@
 import { computed, onMounted, ref, watch } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import { RouterLink, useRoute, useRouter } from 'vue-router';
 import AnnotationDrawer from '../components/AnnotationDrawer.vue';
 import AnnotationPreview from '../components/AnnotationPreview.vue';
 import ImageDrawer from '../components/ImageDrawer.vue';
@@ -118,6 +118,27 @@ __VLS_asFunctionalElement1(__VLS_intrinsics.p, __VLS_intrinsics.p)({
 });
 /** @type {__VLS_StyleScopedClasses['eyebrow']} */ ;
 __VLS_asFunctionalElement1(__VLS_intrinsics.h1, __VLS_intrinsics.h1)({});
+__VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)({
+    ...{ class: "header-actions" },
+});
+/** @type {__VLS_StyleScopedClasses['header-actions']} */ ;
+let __VLS_0;
+/** @ts-ignore @type { | typeof __VLS_components.RouterLink | typeof __VLS_components.RouterLink} */
+RouterLink;
+// @ts-ignore
+const __VLS_1 = __VLS_asFunctionalComponent1(__VLS_0, new __VLS_0({
+    ...{ class: "header-link" },
+    to: "/about",
+}));
+const __VLS_2 = __VLS_1({
+    ...{ class: "header-link" },
+    to: "/about",
+}, ...__VLS_functionalComponentArgsRest(__VLS_1));
+/** @type {__VLS_StyleScopedClasses['header-link']} */ ;
+const { default: __VLS_5 } = __VLS_3.slots;
+// @ts-ignore
+[];
+var __VLS_3;
 __VLS_asFunctionalElement1(__VLS_intrinsics.button, __VLS_intrinsics.button)({
     ...{ onClick: (...[$event]) => {
             return (__VLS_ctx.searchOpen = !__VLS_ctx.searchOpen);
@@ -130,17 +151,17 @@ __VLS_asFunctionalElement1(__VLS_intrinsics.button, __VLS_intrinsics.button)({
 /** @type {__VLS_StyleScopedClasses['search-button']} */ ;
 (__VLS_ctx.searchOpen ? 'Close search' : 'Search');
 if (__VLS_ctx.searchOpen) {
-    const __VLS_0 = ProjectSearch;
+    const __VLS_6 = ProjectSearch;
     // @ts-ignore
-    const __VLS_1 = __VLS_asFunctionalComponent1(__VLS_0, new __VLS_0({
+    const __VLS_7 = __VLS_asFunctionalComponent1(__VLS_6, new __VLS_6({
         ...{ 'onClose': {} },
     }));
-    const __VLS_2 = __VLS_1({
+    const __VLS_8 = __VLS_7({
         ...{ 'onClose': {} },
-    }, ...__VLS_functionalComponentArgsRest(__VLS_1));
-    let __VLS_5;
-    const __VLS_6 = {
-        /** @type {typeof __VLS_5.close} */
+    }, ...__VLS_functionalComponentArgsRest(__VLS_7));
+    let __VLS_11;
+    const __VLS_12 = {
+        /** @type {typeof __VLS_11.close} */
         onClose: (...[$event]) => {
             if (!(__VLS_ctx.searchOpen))
                 throw 0;
@@ -149,25 +170,25 @@ if (__VLS_ctx.searchOpen) {
             [searchOpen, searchOpen, searchOpen,];
         },
     };
-    var __VLS_3;
-    var __VLS_4;
+    var __VLS_9;
+    var __VLS_10;
 }
 if (__VLS_ctx.navigationOpen) {
-    const __VLS_7 = ProjectNavigation;
+    const __VLS_13 = ProjectNavigation;
     // @ts-ignore
-    const __VLS_8 = __VLS_asFunctionalComponent1(__VLS_7, new __VLS_7({
+    const __VLS_14 = __VLS_asFunctionalComponent1(__VLS_13, new __VLS_13({
         ...{ 'onClose': {} },
         ...{ 'onNavigate': {} },
         manifest: (__VLS_ctx.manifest),
     }));
-    const __VLS_9 = __VLS_8({
+    const __VLS_15 = __VLS_14({
         ...{ 'onClose': {} },
         ...{ 'onNavigate': {} },
         manifest: (__VLS_ctx.manifest),
-    }, ...__VLS_functionalComponentArgsRest(__VLS_8));
-    let __VLS_12;
-    const __VLS_13 = {
-        /** @type {typeof __VLS_12.close} */
+    }, ...__VLS_functionalComponentArgsRest(__VLS_14));
+    let __VLS_18;
+    const __VLS_19 = {
+        /** @type {typeof __VLS_18.close} */
         onClose: (...[$event]) => {
             if (!(__VLS_ctx.navigationOpen))
                 throw 0;
@@ -176,12 +197,12 @@ if (__VLS_ctx.navigationOpen) {
             [navigationOpen, navigationOpen, manifest,];
         },
     };
-    const __VLS_14 = {
-        /** @type {typeof __VLS_12.navigate} */
+    const __VLS_20 = {
+        /** @type {typeof __VLS_18.navigate} */
         onNavigate: (__VLS_ctx.navigate),
     };
-    var __VLS_10;
-    var __VLS_11;
+    var __VLS_16;
+    var __VLS_17;
 }
 __VLS_asFunctionalElement1(__VLS_intrinsics.main, __VLS_intrinsics.main)({
     ...{ class: "reader-main" },
@@ -217,9 +238,9 @@ else if (__VLS_ctx.page) {
     (__VLS_ctx.page.type.replace('-', ' '));
     __VLS_asFunctionalElement1(__VLS_intrinsics.h2, __VLS_intrinsics.h2)({});
     (__VLS_ctx.page.title);
-    const __VLS_15 = LegacyContent;
+    const __VLS_21 = LegacyContent;
     // @ts-ignore
-    const __VLS_16 = __VLS_asFunctionalComponent1(__VLS_15, new __VLS_15({
+    const __VLS_22 = __VLS_asFunctionalComponent1(__VLS_21, new __VLS_21({
         ...{ 'onOpenAnnotation': {} },
         ...{ 'onPreviewAnnotation': {} },
         ...{ 'onCloseAnnotationPreview': {} },
@@ -232,7 +253,7 @@ else if (__VLS_ctx.page) {
         page: (__VLS_ctx.page),
         pageTypes: (__VLS_ctx.pageTypes),
     }));
-    const __VLS_17 = __VLS_16({
+    const __VLS_23 = __VLS_22({
         ...{ 'onOpenAnnotation': {} },
         ...{ 'onPreviewAnnotation': {} },
         ...{ 'onCloseAnnotationPreview': {} },
@@ -244,46 +265,46 @@ else if (__VLS_ctx.page) {
         ...{ 'onPreviewImageWrapper': {} },
         page: (__VLS_ctx.page),
         pageTypes: (__VLS_ctx.pageTypes),
-    }, ...__VLS_functionalComponentArgsRest(__VLS_16));
-    let __VLS_20;
-    const __VLS_21 = {
-        /** @type {typeof __VLS_20.openAnnotation} */
+    }, ...__VLS_functionalComponentArgsRest(__VLS_22));
+    let __VLS_26;
+    const __VLS_27 = {
+        /** @type {typeof __VLS_26.openAnnotation} */
         onOpenAnnotation: (__VLS_ctx.openAnnotation),
     };
-    const __VLS_22 = {
-        /** @type {typeof __VLS_20.previewAnnotation} */
+    const __VLS_28 = {
+        /** @type {typeof __VLS_26.previewAnnotation} */
         onPreviewAnnotation: (__VLS_ctx.previewAnnotation),
     };
-    const __VLS_23 = {
-        /** @type {typeof __VLS_20.closeAnnotationPreview} */
+    const __VLS_29 = {
+        /** @type {typeof __VLS_26.closeAnnotationPreview} */
         onCloseAnnotationPreview: (__VLS_ctx.closeAnnotationPreview),
     };
-    const __VLS_24 = {
-        /** @type {typeof __VLS_20.navigate} */
+    const __VLS_30 = {
+        /** @type {typeof __VLS_26.navigate} */
         onNavigate: (__VLS_ctx.navigate),
     };
-    const __VLS_25 = {
-        /** @type {typeof __VLS_20.openImage} */
+    const __VLS_31 = {
+        /** @type {typeof __VLS_26.openImage} */
         onOpenImage: (__VLS_ctx.openImage),
     };
-    const __VLS_26 = {
-        /** @type {typeof __VLS_20.previewImage} */
+    const __VLS_32 = {
+        /** @type {typeof __VLS_26.previewImage} */
         onPreviewImage: (__VLS_ctx.previewImage),
     };
-    const __VLS_27 = {
-        /** @type {typeof __VLS_20.closeImagePreview} */
+    const __VLS_33 = {
+        /** @type {typeof __VLS_26.closeImagePreview} */
         onCloseImagePreview: (__VLS_ctx.closeImagePreview),
     };
-    const __VLS_28 = {
-        /** @type {typeof __VLS_20.openImageWrapper} */
+    const __VLS_34 = {
+        /** @type {typeof __VLS_26.openImageWrapper} */
         onOpenImageWrapper: (__VLS_ctx.openImageWrapper),
     };
-    const __VLS_29 = {
-        /** @type {typeof __VLS_20.previewImageWrapper} */
+    const __VLS_35 = {
+        /** @type {typeof __VLS_26.previewImageWrapper} */
         onPreviewImageWrapper: (__VLS_ctx.previewImageWrapper),
     };
-    var __VLS_18;
-    var __VLS_19;
+    var __VLS_24;
+    var __VLS_25;
     __VLS_asFunctionalElement1(__VLS_intrinsics.footer, __VLS_intrinsics.footer)({
         ...{ class: "page-footer" },
     });
@@ -297,59 +318,59 @@ else if (__VLS_ctx.page) {
     __VLS_asFunctionalElement1(__VLS_intrinsics.strong, __VLS_intrinsics.strong)({});
     (__VLS_ctx.page.provenance.edition);
 }
-const __VLS_30 = AnnotationPreview;
+const __VLS_36 = AnnotationPreview;
 // @ts-ignore
-const __VLS_31 = __VLS_asFunctionalComponent1(__VLS_30, new __VLS_30({
+const __VLS_37 = __VLS_asFunctionalComponent1(__VLS_36, new __VLS_36({
     ...{ 'onOpen': {} },
     ...{ 'onClose': {} },
     page: (__VLS_ctx.annotationPreview),
     position: (__VLS_ctx.previewPosition),
 }));
-const __VLS_32 = __VLS_31({
+const __VLS_38 = __VLS_37({
     ...{ 'onOpen': {} },
     ...{ 'onClose': {} },
     page: (__VLS_ctx.annotationPreview),
     position: (__VLS_ctx.previewPosition),
-}, ...__VLS_functionalComponentArgsRest(__VLS_31));
-let __VLS_35;
-const __VLS_36 = {
-    /** @type {typeof __VLS_35.open} */
+}, ...__VLS_functionalComponentArgsRest(__VLS_37));
+let __VLS_41;
+const __VLS_42 = {
+    /** @type {typeof __VLS_41.open} */
     onOpen: (__VLS_ctx.openAnnotation),
 };
-const __VLS_37 = {
-    /** @type {typeof __VLS_35.close} */
+const __VLS_43 = {
+    /** @type {typeof __VLS_41.close} */
     onClose: (__VLS_ctx.closeAnnotationPreview),
 };
-var __VLS_33;
-var __VLS_34;
-const __VLS_38 = ImagePreview;
+var __VLS_39;
+var __VLS_40;
+const __VLS_44 = ImagePreview;
 // @ts-ignore
-const __VLS_39 = __VLS_asFunctionalComponent1(__VLS_38, new __VLS_38({
+const __VLS_45 = __VLS_asFunctionalComponent1(__VLS_44, new __VLS_44({
     ...{ 'onOpen': {} },
     ...{ 'onClose': {} },
     image: (__VLS_ctx.imagePreview),
     position: (__VLS_ctx.imagePreviewPosition),
 }));
-const __VLS_40 = __VLS_39({
+const __VLS_46 = __VLS_45({
     ...{ 'onOpen': {} },
     ...{ 'onClose': {} },
     image: (__VLS_ctx.imagePreview),
     position: (__VLS_ctx.imagePreviewPosition),
-}, ...__VLS_functionalComponentArgsRest(__VLS_39));
-let __VLS_43;
-const __VLS_44 = {
-    /** @type {typeof __VLS_43.open} */
+}, ...__VLS_functionalComponentArgsRest(__VLS_45));
+let __VLS_49;
+const __VLS_50 = {
+    /** @type {typeof __VLS_49.open} */
     onOpen: (__VLS_ctx.openImage),
 };
-const __VLS_45 = {
-    /** @type {typeof __VLS_43.close} */
+const __VLS_51 = {
+    /** @type {typeof __VLS_49.close} */
     onClose: (__VLS_ctx.closeImagePreview),
 };
-var __VLS_41;
-var __VLS_42;
-const __VLS_46 = AnnotationDrawer;
+var __VLS_47;
+var __VLS_48;
+const __VLS_52 = AnnotationDrawer;
 // @ts-ignore
-const __VLS_47 = __VLS_asFunctionalComponent1(__VLS_46, new __VLS_46({
+const __VLS_53 = __VLS_asFunctionalComponent1(__VLS_52, new __VLS_52({
     ...{ 'onClose': {} },
     ...{ 'onTogglePin': {} },
     ...{ 'onNavigate': {} },
@@ -366,7 +387,7 @@ const __VLS_47 = __VLS_asFunctionalComponent1(__VLS_46, new __VLS_46({
     backlinkPages: (__VLS_ctx.backlinkPages),
     pinned: (__VLS_ctx.drawerPinned),
 }));
-const __VLS_48 = __VLS_47({
+const __VLS_54 = __VLS_53({
     ...{ 'onClose': {} },
     ...{ 'onTogglePin': {} },
     ...{ 'onNavigate': {} },
@@ -382,57 +403,57 @@ const __VLS_48 = __VLS_47({
     pageTypes: (__VLS_ctx.pageTypes),
     backlinkPages: (__VLS_ctx.backlinkPages),
     pinned: (__VLS_ctx.drawerPinned),
-}, ...__VLS_functionalComponentArgsRest(__VLS_47));
-let __VLS_51;
-const __VLS_52 = {
-    /** @type {typeof __VLS_51.close} */
+}, ...__VLS_functionalComponentArgsRest(__VLS_53));
+let __VLS_57;
+const __VLS_58 = {
+    /** @type {typeof __VLS_57.close} */
     onClose: (__VLS_ctx.closeAnnotation),
 };
-const __VLS_53 = {
-    /** @type {typeof __VLS_51.togglePin} */
+const __VLS_59 = {
+    /** @type {typeof __VLS_57.togglePin} */
     onTogglePin: (__VLS_ctx.togglePin),
 };
-const __VLS_54 = {
-    /** @type {typeof __VLS_51.navigate} */
+const __VLS_60 = {
+    /** @type {typeof __VLS_57.navigate} */
     onNavigate: (__VLS_ctx.navigate),
 };
-const __VLS_55 = {
-    /** @type {typeof __VLS_51.openAnnotation} */
+const __VLS_61 = {
+    /** @type {typeof __VLS_57.openAnnotation} */
     onOpenAnnotation: (__VLS_ctx.openAnnotation),
 };
-const __VLS_56 = {
-    /** @type {typeof __VLS_51.previewAnnotation} */
+const __VLS_62 = {
+    /** @type {typeof __VLS_57.previewAnnotation} */
     onPreviewAnnotation: (__VLS_ctx.previewAnnotation),
 };
-const __VLS_57 = {
-    /** @type {typeof __VLS_51.closeAnnotationPreview} */
+const __VLS_63 = {
+    /** @type {typeof __VLS_57.closeAnnotationPreview} */
     onCloseAnnotationPreview: (__VLS_ctx.closeAnnotationPreview),
 };
-const __VLS_58 = {
-    /** @type {typeof __VLS_51.openImage} */
+const __VLS_64 = {
+    /** @type {typeof __VLS_57.openImage} */
     onOpenImage: (__VLS_ctx.openImage),
 };
-const __VLS_59 = {
-    /** @type {typeof __VLS_51.previewImage} */
+const __VLS_65 = {
+    /** @type {typeof __VLS_57.previewImage} */
     onPreviewImage: (__VLS_ctx.previewImage),
 };
-const __VLS_60 = {
-    /** @type {typeof __VLS_51.closeImagePreview} */
+const __VLS_66 = {
+    /** @type {typeof __VLS_57.closeImagePreview} */
     onCloseImagePreview: (__VLS_ctx.closeImagePreview),
 };
-const __VLS_61 = {
-    /** @type {typeof __VLS_51.openImageWrapper} */
+const __VLS_67 = {
+    /** @type {typeof __VLS_57.openImageWrapper} */
     onOpenImageWrapper: (__VLS_ctx.openImageWrapper),
 };
-const __VLS_62 = {
-    /** @type {typeof __VLS_51.previewImageWrapper} */
+const __VLS_68 = {
+    /** @type {typeof __VLS_57.previewImageWrapper} */
     onPreviewImageWrapper: (__VLS_ctx.previewImageWrapper),
 };
-var __VLS_49;
-var __VLS_50;
-const __VLS_63 = ImageDrawer;
+var __VLS_55;
+var __VLS_56;
+const __VLS_69 = ImageDrawer;
 // @ts-ignore
-const __VLS_64 = __VLS_asFunctionalComponent1(__VLS_63, new __VLS_63({
+const __VLS_70 = __VLS_asFunctionalComponent1(__VLS_69, new __VLS_69({
     ...{ 'onClose': {} },
     ...{ 'onFullscreen': {} },
     ...{ 'onNavigate': {} },
@@ -440,68 +461,68 @@ const __VLS_64 = __VLS_asFunctionalComponent1(__VLS_63, new __VLS_63({
     sourcePage: (__VLS_ctx.currentManifestPage),
     relatedPages: (__VLS_ctx.imageRelatedPages),
 }));
-const __VLS_65 = __VLS_64({
+const __VLS_71 = __VLS_70({
     ...{ 'onClose': {} },
     ...{ 'onFullscreen': {} },
     ...{ 'onNavigate': {} },
     image: (__VLS_ctx.activeImage),
     sourcePage: (__VLS_ctx.currentManifestPage),
     relatedPages: (__VLS_ctx.imageRelatedPages),
-}, ...__VLS_functionalComponentArgsRest(__VLS_64));
-let __VLS_68;
-const __VLS_69 = {
-    /** @type {typeof __VLS_68.close} */
+}, ...__VLS_functionalComponentArgsRest(__VLS_70));
+let __VLS_74;
+const __VLS_75 = {
+    /** @type {typeof __VLS_74.close} */
     onClose: (...[$event]) => {
         return (__VLS_ctx.activeImage = null);
         // @ts-ignore
         [navigate, navigate, navigate, loading, error, error, page, page, page, page, page, page, pageTypes, pageTypes, openAnnotation, openAnnotation, openAnnotation, previewAnnotation, previewAnnotation, closeAnnotationPreview, closeAnnotationPreview, closeAnnotationPreview, openImage, openImage, openImage, previewImage, previewImage, closeImagePreview, closeImagePreview, closeImagePreview, openImageWrapper, openImageWrapper, previewImageWrapper, previewImageWrapper, annotationPreview, previewPosition, imagePreview, imagePreviewPosition, annotation, backlinkPages, drawerPinned, closeAnnotation, togglePin, activeImage, activeImage, currentManifestPage, imageRelatedPages,];
     },
 };
-const __VLS_70 = {
-    /** @type {typeof __VLS_68.fullscreen} */
+const __VLS_76 = {
+    /** @type {typeof __VLS_74.fullscreen} */
     onFullscreen: (...[$event]) => {
         return (__VLS_ctx.fullscreenImage = $event);
         // @ts-ignore
         [fullscreenImage,];
     },
 };
-const __VLS_71 = {
-    /** @type {typeof __VLS_68.navigate} */
+const __VLS_77 = {
+    /** @type {typeof __VLS_74.navigate} */
     onNavigate: (__VLS_ctx.navigate),
 };
-var __VLS_66;
-var __VLS_67;
-const __VLS_72 = ImageLightbox;
+var __VLS_72;
+var __VLS_73;
+const __VLS_78 = ImageLightbox;
 // @ts-ignore
-const __VLS_73 = __VLS_asFunctionalComponent1(__VLS_72, new __VLS_72({
+const __VLS_79 = __VLS_asFunctionalComponent1(__VLS_78, new __VLS_78({
     ...{ 'onClose': {} },
     ...{ 'onNavigate': {} },
     image: (__VLS_ctx.fullscreenImage),
     sourcePage: (__VLS_ctx.currentManifestPage),
     relatedPages: (__VLS_ctx.imageRelatedPages),
 }));
-const __VLS_74 = __VLS_73({
+const __VLS_80 = __VLS_79({
     ...{ 'onClose': {} },
     ...{ 'onNavigate': {} },
     image: (__VLS_ctx.fullscreenImage),
     sourcePage: (__VLS_ctx.currentManifestPage),
     relatedPages: (__VLS_ctx.imageRelatedPages),
-}, ...__VLS_functionalComponentArgsRest(__VLS_73));
-let __VLS_77;
-const __VLS_78 = {
-    /** @type {typeof __VLS_77.close} */
+}, ...__VLS_functionalComponentArgsRest(__VLS_79));
+let __VLS_83;
+const __VLS_84 = {
+    /** @type {typeof __VLS_83.close} */
     onClose: (...[$event]) => {
         return (__VLS_ctx.fullscreenImage = null);
         // @ts-ignore
         [navigate, currentManifestPage, imageRelatedPages, fullscreenImage, fullscreenImage,];
     },
 };
-const __VLS_79 = {
-    /** @type {typeof __VLS_77.navigate} */
+const __VLS_85 = {
+    /** @type {typeof __VLS_83.navigate} */
     onNavigate: (__VLS_ctx.navigate),
 };
-var __VLS_75;
-var __VLS_76;
+var __VLS_81;
+var __VLS_82;
 // @ts-ignore
 [navigate,];
 const __VLS_export = (await import('vue')).defineComponent({});

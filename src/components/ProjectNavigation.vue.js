@@ -1,4 +1,5 @@
 import { computed } from 'vue';
+import { RouterLink } from 'vue-router';
 const props = defineProps();
 const emit = defineEmits();
 const groups = computed(() => {
@@ -45,6 +46,37 @@ __VLS_asFunctionalElement1(__VLS_intrinsics.div, __VLS_intrinsics.div)({
     ...{ class: "navigation-groups" },
 });
 /** @type {__VLS_StyleScopedClasses['navigation-groups']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.section, __VLS_intrinsics.section)({
+    ...{ class: "navigation-about" },
+});
+/** @type {__VLS_StyleScopedClasses['navigation-about']} */ ;
+__VLS_asFunctionalElement1(__VLS_intrinsics.h3, __VLS_intrinsics.h3)({});
+let __VLS_0;
+/** @ts-ignore @type { | typeof __VLS_components.RouterLink | typeof __VLS_components.RouterLink} */
+RouterLink;
+// @ts-ignore
+const __VLS_1 = __VLS_asFunctionalComponent1(__VLS_0, new __VLS_0({
+    ...{ 'onClick': {} },
+    to: "/about",
+}));
+const __VLS_2 = __VLS_1({
+    ...{ 'onClick': {} },
+    to: "/about",
+}, ...__VLS_functionalComponentArgsRest(__VLS_1));
+let __VLS_5;
+const __VLS_6 = {
+    /** @type {typeof __VLS_5.click} */
+    onClick: (...[$event]) => {
+        return (__VLS_ctx.emit('close'));
+        // @ts-ignore
+        [emit,];
+    },
+};
+const { default: __VLS_7 } = __VLS_3.slots;
+// @ts-ignore
+[];
+var __VLS_3;
+var __VLS_4;
 for (const [[title, items]] of __VLS_vFor((__VLS_ctx.groups))) {
     __VLS_asFunctionalElement1(__VLS_intrinsics.section, __VLS_intrinsics.section)({
         key: (title),

@@ -206,3 +206,54 @@ body { background: var(--paper); color: var(--ink); }
   .legacy-content { font-size: 1.06rem; line-height: 1.72; }
   .image-preview { display: none; }
 }
+
+/* About page and persistent project navigation */
+.header-actions { display: flex; align-items: center; gap: .65rem; }
+.header-link {
+  display: inline-flex; align-items: center; min-height: 2.4rem; padding: .45rem .75rem;
+  color: var(--ink); border: 1px solid transparent; border-radius: 999px;
+  text-decoration: none; font-size: .86rem; font-weight: 650;
+}
+.header-link:hover, .header-link:focus-visible { color: var(--accent); border-color: var(--rule); }
+.home-button { display: grid; place-items: center; text-decoration: none; }
+.navigation-groups a {
+  display: block; padding: .48rem 0; color: var(--ink); text-decoration: none;
+  font-family: var(--reading-serif);
+}
+.navigation-groups a:hover { color: var(--accent); }
+.navigation-about { background: #f8f3e9; margin: .35rem -.7rem 0; padding: 1rem .7rem !important; border-radius: .35rem; }
+
+.about-main { width: min(980px, calc(100% - 2rem)); margin: clamp(2rem, 6vw, 5rem) auto; }
+.about-card {
+  background: var(--sheet); border: 1px solid var(--rule); box-shadow: 0 18px 55px rgba(35,30,21,.08);
+  padding: clamp(1.5rem, 5vw, 5rem);
+}
+.about-hero { padding-bottom: clamp(2.5rem, 6vw, 5rem); border-bottom: 1px solid var(--rule); }
+.about-hero h2 {
+  max-width: 13ch; margin: .65rem 0 1.25rem; font: 500 clamp(2.8rem, 7vw, 5.7rem)/.98 var(--display-serif);
+  letter-spacing: -.045em;
+}
+.about-deck { max-width: 67ch; margin: 0 0 1.75rem; color: #4e473d; font: clamp(1.12rem, 2vw, 1.38rem)/1.65 var(--reading-serif); }
+.primary-link {
+  display: inline-flex; align-items: center; min-height: 2.8rem; padding: .7rem 1.05rem;
+  border-radius: 999px; background: var(--accent); color: #fffdf8; text-decoration: none; font-weight: 700;
+}
+.about-card > section { display: grid; grid-template-columns: minmax(180px, .72fr) minmax(0, 1.5fr); column-gap: clamp(2rem, 6vw, 6rem); padding: clamp(2.2rem, 5vw, 4.5rem) 0; border-bottom: 1px solid var(--rule); }
+.about-card section h3 { margin: 0; font: 500 clamp(1.45rem, 3vw, 2.15rem)/1.12 var(--display-serif); }
+.about-card section p { grid-column: 2; max-width: 68ch; margin: 0 0 1.1rem; font: 1.08rem/1.78 var(--reading-serif); color: #403a32; }
+.about-card section p:last-child { margin-bottom: 0; }
+.about-note { background: #f4eee2; margin-inline: clamp(-1.5rem, -5vw, -5rem); padding-inline: clamp(1.5rem, 5vw, 5rem) !important; }
+.about-note .eyebrow { grid-column: 1 / -1; margin-bottom: 1.2rem; font-family: ui-sans-serif,system-ui,sans-serif; }
+.about-footer { display: flex; justify-content: space-between; gap: 2rem; align-items: baseline; padding-top: 2.5rem; color: var(--muted-ink); }
+.about-footer p { margin: 0; }
+.about-footer a { color: var(--accent); font-weight: 700; text-decoration: none; }
+
+@media (max-width: 700px) {
+  .header-actions { gap: .2rem; }
+  .header-link { padding-inline: .5rem; }
+  .about-main { width: 100%; margin: 0; }
+  .about-card { border: 0; box-shadow: none; }
+  .about-card > section { grid-template-columns: 1fr; gap: 1.1rem; }
+  .about-card section p { grid-column: 1; }
+  .about-footer { flex-direction: column; }
+}
