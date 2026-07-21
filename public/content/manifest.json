@@ -47,7 +47,7 @@
       "id": "among-notes-title-n",
       "slug": "title",
       "type": "annotation",
-      "title": "Title",
+      "title": "Sweeney Among ...",
       "sourceFile": "Among_notes/title_N.htm"
     },
     {
@@ -82,7 +82,7 @@
       "id": "burbank-notes-antony-n",
       "slug": "antony",
       "type": "annotation",
-      "title": "Antony_N",
+      "title": "The God Hercules...",
       "sourceFile": "Burbank_notes/Antony_N.htm"
     },
     {
@@ -201,35 +201,35 @@
       "id": "burbank-notes-img-rialto",
       "slug": "img-rialto",
       "type": "image-wrapper",
-      "title": "Eliot in 1910",
+      "title": "The Rialto Bridge by Canaletto",
       "sourceFile": "Burbank_notes/IMG_Rialto.htm"
     },
     {
       "id": "burbank-notes-img-rialto1988",
       "slug": "img-rialto1988",
       "type": "image-wrapper",
-      "title": "Eliot in 1910",
+      "title": "Rialto bridge, Venice 1988",
       "sourceFile": "Burbank_notes/IMG_Rialto1988.htm"
     },
     {
       "id": "burbank-notes-img-stmark",
       "slug": "img-stmark",
       "type": "image-wrapper",
-      "title": "Eliot in 1910",
+      "title": "St Mark and the Winged Lion, 1988.",
       "sourceFile": "Burbank_notes/IMG_StMark.htm"
     },
     {
       "id": "burbank-notes-img-venice1-gc",
       "slug": "img-venice1-gc",
       "type": "image-wrapper",
-      "title": "Eliot in 1910",
+      "title": "view from",
       "sourceFile": "Burbank_notes/IMG_Venice1_GC.htm"
     },
     {
       "id": "burbank-notes-img-sebastian",
       "slug": "img-sebastian",
       "type": "image-wrapper",
-      "title": "Eliot in 1910",
+      "title": "St Sebastian",
       "sourceFile": "Burbank_notes/IMG_sebastian.htm"
     },
     {
@@ -243,7 +243,7 @@
       "id": "burbank-notes-jew-n",
       "slug": "jew",
       "type": "annotation",
-      "title": "jew_N",
+      "title": "Jew",
       "sourceFile": "Burbank_notes/Jew_N.htm"
     },
     {
@@ -271,7 +271,7 @@
       "id": "burbank-notes-phoenix-n",
       "slug": "phoenix",
       "type": "annotation",
-      "title": "Phoenix_N",
+      "title": "Defunctive music",
       "sourceFile": "Burbank_notes/Phoenix_N.htm"
     },
     {
@@ -411,35 +411,35 @@
       "id": "burbank-notes-axletree-n",
       "slug": "axletree",
       "type": "annotation",
-      "title": "axletree_N",
+      "title": "axletree",
       "sourceFile": "Burbank_notes/axletree_N.htm"
     },
     {
       "id": "burbank-notes-beatup-n",
       "slug": "beatup",
       "type": "annotation",
-      "title": "beatup_N",
+      "title": "beat up the...",
       "sourceFile": "Burbank_notes/beatup_N.htm"
     },
     {
       "id": "burbank-notes-bentknee-n",
       "slug": "bentknee",
       "type": "annotation",
-      "title": "bentknees_N",
+      "title": "a saggy bending...",
       "sourceFile": "Burbank_notes/bentknee_N.htm"
     },
     {
       "id": "burbank-notes-bluenailed-n",
       "slug": "bluenailed",
       "type": "annotation",
-      "title": "bluenailed_N",
+      "title": "blue-nailed",
       "sourceFile": "Burbank_notes/bluenailed_N.htm"
     },
     {
       "id": "burbank-notes-bridge-n",
       "slug": "bridge",
       "type": "annotation",
-      "title": "bridge_N",
+      "title": "little bridge...",
       "sourceFile": "Burbank_notes/bridge_N.htm"
     },
     {
@@ -453,42 +453,42 @@
       "id": "burbank-notes-clipped-n",
       "slug": "clipped",
       "type": "annotation",
-      "title": "Clipped_N",
+      "title": "clipped",
       "sourceFile": "Burbank_notes/clipped_N.htm"
     },
     {
       "id": "burbank-notes-descend-n",
       "slug": "descend",
       "type": "annotation",
-      "title": "descend_N",
+      "title": "descending at...",
       "sourceFile": "Burbank_notes/descend_N.htm"
     },
     {
       "id": "burbank-notes-entertains-n",
       "slug": "entertains",
       "type": "annotation",
-      "title": "entertains_N",
+      "title": "she entertains",
       "sourceFile": "Burbank_notes/entertains_N.htm"
     },
     {
       "id": "burbank-notes-evenfeet-n",
       "slug": "evenfeet",
       "type": "annotation",
-      "title": "evenfeet_N",
+      "title": "with even feet",
       "sourceFile": "Burbank_notes/evenfeet_N.htm"
     },
     {
       "id": "burbank-notes-eye-n",
       "slug": "eye",
       "type": "annotation",
-      "title": "eye_N",
+      "title": "eye",
       "sourceFile": "Burbank_notes/eye_N.htm"
     },
     {
       "id": "burbank-notes-flead-n",
       "slug": "flead",
       "type": "annotation",
-      "title": "Flea'd_N",
+      "title": "flea'd",
       "sourceFile": "Burbank_notes/flead_N.htm"
     },
     {
@@ -502,7 +502,7 @@
       "id": "burbank-notes-horses-n",
       "slug": "horses",
       "type": "annotation",
-      "title": "horses_N",
+      "title": "the horses",
       "sourceFile": "Burbank_notes/horses_N.htm"
     },
     {
@@ -516,7 +516,7 @@
       "id": "burbank-notes-istria-n",
       "slug": "istria",
       "type": "annotation",
-      "title": "Istria_N",
+      "title": "Istria",
       "sourceFile": "Burbank_notes/istria_N.htm"
     },
     {
@@ -530,21 +530,21 @@
       "id": "burbank-notes-lot-n",
       "slug": "lot",
       "type": "annotation",
-      "title": "lot_N",
+      "title": "ew...lot",
       "sourceFile": "Burbank_notes/lot_N.htm"
     },
     {
       "id": "burbank-notes-loved-n",
       "slug": "loved",
       "type": "annotation",
-      "title": "loved_N",
+      "title": "loved him...",
       "sourceFile": "Burbank_notes/loved_N.htm"
     },
     {
       "id": "burbank-notes-lustreless-n",
       "slug": "lustreless",
       "type": "annotation",
-      "title": "lustreless_N",
+      "title": "a lustreless...",
       "sourceFile": "Burbank_notes/lustreless_N.htm"
     },
     {
@@ -565,7 +565,7 @@
       "id": "burbank-notes-palms-n",
       "slug": "palms",
       "type": "annotation",
-      "title": "palms_N",
+      "title": "and elbows, with...",
       "sourceFile": "Burbank_notes/palms_N.htm"
     },
     {
@@ -579,56 +579,56 @@
       "id": "burbank-notes-passed-n",
       "slug": "passed",
       "type": "annotation",
-      "title": "passed_N",
+      "title": "passed seaward...",
       "sourceFile": "Burbank_notes/passed_N.htm"
     },
     {
       "id": "burbank-notes-passing-n",
       "slug": "passing",
       "type": "annotation",
-      "title": "passing_N",
+      "title": "passing bell",
       "sourceFile": "Burbank_notes/passing_N.htm"
     },
     {
       "id": "burbank-notes-perspective-n",
       "slug": "perspective",
       "type": "annotation",
-      "title": "perspective_N",
+      "title": "perspective of Canaletto",
       "sourceFile": "Burbank_notes/perspective_N.htm"
     },
     {
       "id": "burbank-notes-phthisic-n",
       "slug": "phthisic",
       "type": "annotation",
-      "title": "phthisic_N",
+      "title": "meagre, phthisic",
       "sourceFile": "Burbank_notes/phthisic_N.htm"
     },
     {
       "id": "burbank-notes-piles-n",
       "slug": "piles",
       "type": "annotation",
-      "title": "piles_N",
+      "title": "rats...piles",
       "sourceFile": "Burbank_notes/piles_N.htm"
     },
     {
       "id": "burbank-notes-princess-n",
       "slug": "princess",
       "type": "annotation",
-      "title": "Princess_N",
+      "title": "Princess Volupine",
       "sourceFile": "Burbank_notes/princess_N.htm"
     },
     {
       "id": "burbank-notes-protozoic-n",
       "slug": "protozoic",
       "type": "annotation",
-      "title": "protozoic_N",
+      "title": "protozoic slime",
       "sourceFile": "Burbank_notes/protozoic_N.htm"
     },
     {
       "id": "burbank-notes-protrusive-n",
       "slug": "protrusive",
       "type": "annotation",
-      "title": "lustreless_N",
+      "title": "protrusive",
       "sourceFile": "Burbank_notes/protrusive_N.htm"
     },
     {
@@ -649,7 +649,7 @@
       "id": "burbank-notes-seven-n",
       "slug": "seven",
       "type": "annotation",
-      "title": "passing_N",
+      "title": "the seven laws",
       "sourceFile": "Burbank_notes/seven_N.htm"
     },
     {
@@ -663,7 +663,7 @@
       "id": "burbank-notes-slowly-n",
       "slug": "slowly",
       "type": "annotation",
-      "title": "slowly_N",
+      "title": "Slowly",
       "sourceFile": "Burbank_notes/slowly_N.htm"
     },
     {
@@ -677,14 +677,14 @@
       "id": "burbank-notes-thisorsu-n",
       "slug": "thisorsu",
       "type": "annotation",
-      "title": "thisorsuch_N",
+      "title": "But this or...",
       "sourceFile": "Burbank_notes/thisorsu_N.htm"
     },
     {
       "id": "burbank-notes-times-n",
       "slug": "times",
       "type": "annotation",
-      "title": "times_N",
+      "title": "Times' ruins",
       "sourceFile": "Burbank_notes/times_N.htm"
     },
     {
@@ -712,7 +712,7 @@
       "id": "burbank-notes-under-n",
       "slug": "under",
       "type": "annotation",
-      "title": "under_N",
+      "title": "under sea",
       "sourceFile": "Burbank_notes/under_N.htm"
     },
     {
@@ -1188,7 +1188,7 @@
       "id": "waste-notes-sybil-n",
       "slug": "sybil",
       "type": "annotation",
-      "title": "Sybil_N",
+      "title": "Nam Sibyl...",
       "sourceFile": "Waste_notes/Sybil_N.htm"
     },
     {
@@ -1202,7 +1202,7 @@
       "id": "waste-notes-tempest1-2-487-n",
       "slug": "tempest1-2-487",
       "type": "annotation",
-      "title": "Tempest1-2-487_N",
+      "title": "Those were pearls ...",
       "sourceFile": "Waste_notes/Tempest1-2-487_N.htm"
     },
     {
@@ -1475,7 +1475,7 @@
       "id": "waste-notes-fabbro-n",
       "slug": "fabbro",
       "type": "annotation",
-      "title": "Sybil_N",
+      "title": "Il miglior fabbro",
       "sourceFile": "Waste_notes/fabbro_N.htm"
     },
     {
@@ -1979,7 +1979,7 @@
       "id": "waste-notes-unreal-n",
       "slug": "unreal",
       "type": "annotation",
-      "title": "Unreal_N",
+      "title": "Unreal City",
       "sourceFile": "Waste_notes/unreal_N.htm"
     },
     {
