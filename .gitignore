@@ -6,3 +6,6 @@ dist/
 Thumbs.db
 .vscode/
 .idea/
+*.tsbuildinfo
+src/**/*.vue.js
+src/**/*.vue.d.ts
